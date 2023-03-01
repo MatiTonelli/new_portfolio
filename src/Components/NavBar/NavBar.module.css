@@ -1,0 +1,36 @@
+.navBarContainer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 8vh;
+    align-items: center;
+    position: sticky;
+    justify-content: center;
+    top: 0; 
+    z-index: 11;
+    font-family: Red Hat Mono;
+    color: rgba(0, 0, 0, 0.72);
+    background-color: black;
+    /* box-shadow: 1px 1px 20px 1px black; */
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.contactButtonContainer button{
+    border: 0;
+    background-color: rgb(226, 226, 226);
+    color: rgba(0, 0, 0, 0.72);
+    font-size: 15px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 25px;
+    font-family: Red Hat Mono;
+    font-weight: 600;
+}

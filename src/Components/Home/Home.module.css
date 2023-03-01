@@ -1,0 +1,240 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+  place-items: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.homeContainer hr {
+  width: 70vw;
+}
+
+.headingContainer {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  height: 100%;
+  text-align: justify;
+  margin-left: -30vw;
+}
+
+.titles {
+  width: 29vw;
+}
+
+.titles h1 {
+  font-family: "Red Hat Mono";
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.titles h3 {
+  font-family: "Red Hat Mono";
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#nombre {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.imageContainer{
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: 40vw;
+}
+
+.fotoHome {
+  position: relative;
+  right: 5.5em;
+  top: 1em;
+  height: 25em;
+}
+
+.rectangleHeading{
+  background-color: #ffed00;
+  height: 22em;
+  width: 70em;
+  position: relative;
+  left: -3em;
+  bottom: 21em;
+  transform: rotate(-45deg);
+  border-bottom-left-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.circleHeading{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 22em;
+  width: 22em;
+  border-radius: 50%;
+  z-index: 9;
+  background-color: #ffed00;
+}
+
+.cutterCircle{
+  height: 25em;
+  width: 22em;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0% 0% 46% 46%;
+  display: flex;
+  overflow: hidden;
+}
+
+.fixSquare {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 21.6vh;
+  background-color: #ffed00;
+  z-index: 7;
+}
+
+.fixSquare hr {
+    display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  z-index: 4;
+}
+
+.skillsContainer {
+  display: flex;
+  gap: 8px;
+  width: 29vw;
+}
+
+.skillsContainer button {
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: Red Hat Mono;
+  border: 0;
+  padding: 3px;
+}
+
+.skillsContainer :first-child {
+  background-color: #ffee00b7;
+}
+
+.skillsContainer :nth-child(2) {
+  background-color: rgb(209, 209, 209);
+}
+
+.skillsContainer :nth-child(3) {
+  background-color: rgb(245, 223, 194);
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 100%;
+  text-align: justify;
+  font-family: "Red Hat Mono";
+}
+
+.aboutContainer h2 {
+  text-align: justify;
+}
+
+.aboutContainer p {
+  line-height: 1.6;
+}
+
+.proyectsBiggerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8em;
+}
+
+.proyectsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  flex-wrap: wrap;
+}
+
+.eachProyectContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "Red Hat Mono";
+  font-weight: 400;
+}
+
+.eachProyectContainer img {
+  width: 24em;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+
+.eachProyectContainer div {
+    color: #000000;
+    display: flex;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    bottom: 2em; 
+    left: 17em;
+    background-color: #ffed00;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+    place-content: center;
+    border-radius: 10px;
+}
+
+.eachProyectContainer h5 {
+    font-size: 1.7em;
+    margin-top: -1em;
+}
+
+.eachProyectContainer p {
+    font-size: 1.4em;
+}
+
+.proyectOnHover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.imageOnHover{
+    filter: grayscale(0%);
+}
+
+.project1 {
+    position: relative;
+    bottom: 3em; 
+    left: 0px;
+}
+
+.project2 {
+    position: relative;
+    top: 3em; 
+    left: 0px;
+}
+
+.project3 {
+    position: relative;
+    top: 12em; 
+    left: 0px;
+}
