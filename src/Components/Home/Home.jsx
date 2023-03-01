@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 
-import fotoHome from "../../assets/matiPort.png";
+import fotoHome from "../../assets/MatiPort.png";
 import kinema from "../../assets/kinema.png";
 import findYourActivity from "../../assets/findYourActivity.png";
 import wcFixture from "../../assets/WCFixture.jpg";
