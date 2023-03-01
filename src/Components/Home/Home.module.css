@@ -4,7 +4,9 @@
   gap: 20vh;
   place-items: center;
   height: 100%;
-  width: 100vw;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .homeContainer hr {
@@ -15,11 +17,11 @@
   margin-top: 30vh;
   display: flex;
   flex-direction: column;
-  place-content: center;
-  place-items: center;
+  place-content: start;
+  place-items: start;
   height: 100%;
   text-align: justify;
-  margin-left: -30vw;
+  width: 100%;
 }
 
 .titles {
@@ -28,14 +30,16 @@
 
 .titles h1 {
   font-family: "Red Hat Mono";
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .titles h3 {
   font-family: "Red Hat Mono";
-  font-size: 1.5em;
+  font-size: 1.5vw;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 #nombre {
@@ -47,9 +51,11 @@
 
 .imageContainer{
   position: absolute;
-  top: 30%;
-  left: 60%;
-  width: 40vw;
+  top: 0%;
+  right: 0%;
+  width: 70rem;
+  height: 55rem;
+  overflow: hidden;
 }
 
 .fotoHome {
@@ -65,7 +71,7 @@
   width: 70em;
   position: relative;
   left: -3em;
-  bottom: 21em;
+  bottom: -12em;
   transform: rotate(-45deg);
   border-bottom-left-radius: 10%;
   border-top-left-radius: 10%;
@@ -92,28 +98,6 @@
   overflow: hidden;
 }
 
-.fixSquare {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 21.6vh;
-  background-color: #ffed00;
-  z-index: 7;
-}
-
-.fixSquare hr {
-    display: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  border: 1px solid rgba(0, 0, 0, 0.301);
-  z-index: 4;
-}
 
 .skillsContainer {
   display: flex;
@@ -127,6 +111,7 @@
   font-family: Red Hat Mono;
   border: 0;
   padding: 3px;
+  white-space: nowrap;
 }
 
 .skillsContainer :first-child {
@@ -144,7 +129,7 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  width: 70vw;
+  width: 100%;
   height: 100%;
   text-align: justify;
   font-family: "Red Hat Mono";
@@ -238,3 +223,111 @@
     top: 12em; 
     left: 0px;
 }
+
+
+
+@media screen and (max-width: 2300px) {
+  .imageContainer{
+    width: 60rem;
+  }
+
+}
+@media screen and (max-width: 1921px) {
+  .imageContainer{
+    width: 50rem;
+    height: 40rem;
+  }
+  .rectangleHeading{
+    left: -2em;
+    bottom: 4em;
+  }
+
+}
+@media screen and (max-width: 1651px) {
+  .imageContainer{
+    width: 40rem;
+    height: 40rem;
+  }
+  .rectangleHeading{
+    left: -2em;
+    bottom: 4em;
+  }
+
+}
+
+@media screen and (max-width: 1250px) {
+  .imageContainer{
+    width: 35rem;
+  }
+  .rectangleHeading{
+    
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  .imageContainer{
+    width: 35rem;
+    top: 5%;
+  }
+
+  .titles h1 {
+    font-size: 1.7em;
+  }
+  
+  .titles h3 {
+    font-family: "Red Hat Mono";
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  @media screen and (max-height:700px) {
+    .imageContainer{
+      top: 0%;
+    }
+
+  }
+} 
+
+@media screen and (max-width: 950px) {
+  .imageContainer{
+    width: 25rem;
+  }
+
+} 
+
+@media screen and (max-width: 770px) {
+  .imageContainer{
+    width: 20rem;
+    top: -5%;
+  }
+
+} 
+
+@media screen and (max-width: 500px) {
+  .imageContainer{
+    width: 25rem;
+    top: -15%;
+  }
+  .headingContainer {
+    margin-top: 60vh;
+  }
+} 
+
+@media screen and (max-width: 400px) {
+  .imageContainer{
+    width: 20rem;
+  }
+} 
+
+@media screen and (max-width: 330px) {
+  .imageContainer{
+    width: 18rem;
+  }
+  .titles h1 {
+    font-size: 1.3em;
+  }
+  
+  .titles h3 {
+    font-size: 1em;
+  }
+} 
