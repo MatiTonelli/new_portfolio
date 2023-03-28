@@ -5,9 +5,9 @@ export default function NavBar() {
   return (
     <div className={styles.navBarContainer}>
       <div className={styles.buttonsContainer}>
-        <a>Home</a>
-        <a>About me</a>
-        <a>Portfolio</a>
+        <a href="#">Home</a>
+        <a href="#about">About me</a>
+        <a href="#portfolio">Portfolio</a>
       </div>
       <div className={styles.contactButtonContainer}>
         <button>Contact Me</button>

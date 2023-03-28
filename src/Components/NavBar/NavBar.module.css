@@ -5,14 +5,14 @@
     width: 100vw;
     height: 8vh;
     align-items: center;
-    position: sticky;
+    position: fixed;
     justify-content: center;
     top: 0; 
     z-index: 11;
     font-family: Red Hat Mono;
     color: rgba(0, 0, 0, 0.72);
     background-color: #ffed00;
-    /* box-shadow: 1px 1px 20px 1px black; */
+     box-shadow: 1px 1px 20px 1px rgba(107, 107, 107, 0.618);
 }
 
 .buttonsContainer{
