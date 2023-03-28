@@ -10,10 +10,10 @@ import kinema from "../../assets/kinema.png";
 import findYourActivity from "../../assets/findYourActivity.png";
 import wcFixture from "../../assets/WCFixture.jpg";
 import mailen from "../../assets/mailen.png";
-import twitterIcon from "../../assets/gorjeo.png";
-import gitHubIcon from "../../assets/github.png";
-import linkedinIcon from "../../assets/linkedin.png";
-import personIcon from "../../assets/profile.png";
+import twitterIcon from "../../assets/twitter.svg";
+import gitHubIcon from "../../assets/github.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
+import personIcon from "../../assets/envelope.svg";
 
 setTimeout(() => {
   let proyectos = document.querySelectorAll("." + styles.eachProyectContainer);
@@ -211,28 +211,28 @@ export default function Home() {
               className={`${styles.socialButton} ${styles.socialButtonGithub}`}
               aria-label="GitHub"
             >
-              <img src="src\assets\github.svg" alt="Bootstrap"/>
+              <img src={gitHubIcon} alt="GitHub"/>
             </a>
             <a
               href="#"
               className={`${styles.socialButton} ${styles.socialButtonLinkedin}`}
               aria-label="LinkedIn"
             >
-              <img src="src\assets\linkedin.svg" alt="Bootstrap"/>
+              <img src={linkedinIcon} alt="LinkedIn"/>
             </a>
             <a
               href="#"
               className={`${styles.socialButton} ${styles.socialButtonTwitter}`}
               aria-label="Twitter"
             >
-              <img src="src\assets\twitter.svg" alt="Bootstrap"/>
+              <img src={twitterIcon} alt="Twitter"/>
             </a>
             <a
               href="#"
               className={`${styles.socialButton} ${styles.socialButtonEmail}`}
               aria-label="Email"
             >
-              <img src="src\assets\envelope.svg" alt="Bootstrap"/>
+              <img src={personIcon} alt="Email"/>
             </a>
           </div>
         </div>
