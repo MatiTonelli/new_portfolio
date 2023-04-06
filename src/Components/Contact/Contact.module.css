@@ -1,0 +1,214 @@
+.contactContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  background-color: #fbd86553;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+
+.contactSideInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9em;
+}
+
+h3 {
+  font-size: 2.7em;
+  font-family: "Red Hat Mono";
+}
+
+p {
+  font-size: 1.5em;
+  font-family: "Red Hat Mono";
+}
+
+.eachInput {
+  display: block;
+  width: 60%;
+  font-family: "Red Hat Mono";
+  box-sizing: border-box;
+}
+
+.eachInput input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+  font-family: "Red Hat Mono";
+  border-bottom: 2px solid #78788c86;
+}
+
+.eachInput input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+.submitButton {
+  cursor: pointer;
+  background-color: #f8c304;
+  padding: 16px 32px;
+  border-radius: 32px;
+  color: #000;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  overflow: hidden;
+  width: 170px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 2px 6px #4e3cc8;
+  position: relative;
+}
+
+.errorMessageForm {
+  color: red;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.eachIcon {
+  size: 5em;
+}
+
+.iconsContact {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+}
+
+.socialButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.socialButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 64px;
+  height: 64px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #ffffff;
+  text-align: center;
+}
+.socialButton::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.socialButton:focus::after,
+.socialButton:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+.socialButton img,
+.socialButton svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.socialButton img {
+  width: 25.6px;
+}
+.socialButton svg {
+  height: 40%;
+  width: 40%;
+}
+.socialButtonEmail {
+  color: #0072c6;
+}
+.socialButtonEmail::after {
+  background: #0072c6;
+}
+
+.socialButtonLinkedin {
+  color: #0077b5;
+}
+.socialButtonLinkedin::after {
+  background: #0077b5;
+}
+
+.socialButtonGithub {
+  color: #6e5494;
+}
+.socialButtonGithub::after {
+  background: #6e5494;
+}
+
+.socialButtonTwitter {
+  color: #55acee;
+}
+.socialButtonTwitter::after {
+  background: #55acee;
+}
+hr {
+  margin: 4em 0 2em 0;
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .contactForm {
+    gap: 0;
+  }
+  h3 {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+  p {
+    margin: 2em 0 2em 0;
+  }
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .eachInput{
+    width: 85%;
+  }
+  h3{
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .socialButton {
+    width: 50px;
+    height: 50px;
+  }
+}

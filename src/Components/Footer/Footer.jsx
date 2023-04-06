@@ -1,0 +1,11 @@
+import React from "react";
+import { useState, useRef, useEffect } from "react";
+import styles from "./Footer.module.css";
+
+export default function Footer() {
+  return (
+    <div className={styles.footerContainer}>
+    
+    </div>
+  );
+}

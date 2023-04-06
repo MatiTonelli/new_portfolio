@@ -11,8 +11,8 @@
     z-index: 11;
     font-family: Red Hat Mono;
     color: rgba(0, 0, 0, 0.72);
-    background-color: #ffed00;
-     box-shadow: 1px 1px 20px 1px rgba(107, 107, 107, 0.618);
+    background-color: #f8c304;
+    box-shadow: 1px 1px 20px 1px rgba(107, 107, 107, 0.618);
 }
 
 .buttonsContainer{
@@ -22,6 +22,16 @@
     gap: 40px;
     font-weight: 600;
     font-size: 1em;
+}
+
+.buttonsContainer button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .contactButtonContainer button{

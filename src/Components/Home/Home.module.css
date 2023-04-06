@@ -7,12 +7,8 @@
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
-  margin-bottom: 300px;
 }
 
-.homeContainer hr {
-  width: 70vw;
-}
 
 .headingContainer {
   margin-top: 30vh;
@@ -67,7 +63,7 @@
 }
 
 .rectangleHeading {
-  background-color: #ffed00;
+  background-color: #f8c304;
   height: 22em;
   width: 70em;
   position: relative;
@@ -86,7 +82,7 @@
   width: 22em;
   border-radius: 50%;
   z-index: 9;
-  background-color: #ffed00;
+  background-color: #f8c304;
 }
 
 .cutterCircle {
@@ -157,6 +153,7 @@
   flex-direction: row;
   gap: 5em;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .eachProyectContainer {
@@ -182,7 +179,7 @@
   font-size: 20px;
   bottom: 2em;
   left: 17em;
-  background-color: #ffed00;
+  background-color: #f8c304;
   width: 60px;
   height: 60px;
   place-items: center;
@@ -209,193 +206,7 @@
   filter: grayscale(0%);
 }
 
-.project1 {
-  position: relative;
-  bottom: 3em;
-  left: 0px;
-}
 
-.project2 {
-  position: relative;
-  top: 3em;
-  left: 0px;
-}
-
-.project3 {
-  position: relative;
-  top: 12em;
-  left: 0px;
-}
-
-.contactContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.contactForm {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4em;
-}
-
-.contactSideInfoContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 9em;
-}
-
-.contactSideInfoContainer h3{
-  font-size: 2.7em;
-  font-family: "Red Hat Mono";
-}
-
-.contactSideInfoContainer p{
-  font-size: 1.5em;
-  font-family: "Red Hat Mono";
-}
-
-.eachInput {
-  display: block;
-  width: 60%;
-  font-family: "Red Hat Mono";
-  box-sizing: border-box;
-}
-
-.eachInput input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  transition: all 0.3s;
-  border-bottom: 2px solid #bebed2;
-  font-family: "Red Hat Mono";
-}
-
-.eachInput input:focus {
-  border-bottom: 2px solid #78788c;
-}
-
-.submitButton {
-  cursor: pointer;
-  background-color: #ffed00;
-  padding: 16px 32px;
-  border-radius: 32px;
-  color: #000;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  justify-content: center;
-  overflow: hidden;
-  width: 170px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 2px 6px #4e3cc8;
-  position: relative;
-}
-
-.errorMessageForm{
-  color: red;
-  padding-top: 5px;
-  box-sizing: border-box;
-}
-
-.eachIcon{
-  size: 5em;
-}
-
-.iconsContact{
-  display: flex;
-  flex-direction: row;
-  gap: 5em;
-}
-
-.socialButtons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-}
-.socialButton {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  width: 64px;
-  height: 64px;
-  text-decoration: none;
-  border-radius: 100%;
-  background: #ffffff;
-  text-align: center;
-}
-.socialButton::after {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: 50%;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 100%;
-  transition: 0.3s;
-}
-.socialButton:focus, .socialButton:hover {
-  color: #fff;
-}
-.socialButton:focus::after, .socialButton:hover::after {
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  margin-left: calc(-50% - 1px);
-}
-.socialButton img, .socialButton svg {
-  position: relative;
-  z-index: 1;
-  transition: 0.3s;
-}
-.socialButton img {
-  width: 25.6px;
-}
-.socialButton svg {
-  height: 40%;
-  width: 40%;
-}
-.socialButtonEmail {
-  color: #0072c6;
-}
-.socialButtonEmail::after {
-  background: #0072c6;
-}
-
-.socialButtonLinkedin {
-  color: #0077b5;
-}
-.socialButtonLinkedin::after {
-  background: #0077b5;
-}
-
-.socialButtonGithub {
-  color: #6e5494;
-}
-.socialButtonGithub::after {
-  background: #6e5494;
-}
-
-.socialButtonTwitter {
-  color: #55acee;
-}
-.socialButtonTwitter::after {
-  background: #55acee;
-}
 
 
 @media screen and (max-width: 2300px) {
@@ -452,11 +263,19 @@
       top: 0%;
     }
   }
+  .proyectsContainer{
+    flex-direction: column;
+
+  }
 }
 
 @media screen and (max-width: 950px) {
   .imageContainer {
     width: 25rem;
+  }
+  .contactContainer{
+    flex-direction: column;
+    gap: 5vh;
   }
 }
 
@@ -478,11 +297,36 @@
   .homeContainer {
     gap: 10vh;
   }
+  
 }
 
 @media screen and (max-width: 400px) {
   .imageContainer {
     width: 20rem;
+  }
+  .eachProyectContainer img {
+    width: 20em;
+  }
+  .eachProyectContainer div {
+    left: 14em;
+  }
+  .eachProyectContainer h5 {
+    font-size: 1.5em;
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+  
+}
+
+@media screen and (max-width: 360px) {
+  .eachProyectContainer img {
+    width: 17em;
+  }
+  .eachProyectContainer div {
+    left: 11em;
+  }
+  .eachProyectContainer p {
+    font-size: 1.2em;
   }
 }
 
