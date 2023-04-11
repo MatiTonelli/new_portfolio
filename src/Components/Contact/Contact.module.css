@@ -61,6 +61,7 @@ p {
 }
 
 .submitButton {
+  font-family: "Red Hat Mono";
   cursor: pointer;
   background-color: #f8c304;
   padding: 16px 32px;

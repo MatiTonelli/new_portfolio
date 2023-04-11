@@ -70,9 +70,9 @@ export default function Home() {
         </h2>
         <br />
         <p>
-          Hi! I'm Matias, I'm 24 years old, I recently graduated from Henry's
-          Full-Stack Bootcamp and looking for job. Before I entered the bootcamp
-          I been studying the career of Computer engineering in the University
+          Hi! I'm Matias, I'm 24 years old and recently graduated from Henry's
+          Full-Stack Bootcamp and looking for job. Before I started with the bootcamp
+          I have been studying the career of Computer engineering in the University
           of Tres de Febrero (UNTREF). I advanced and complete on the branch of
           programming. I consider myself a person who is persistent, adaptative
           and self-didactic, I love videogames and programming. I want to keep

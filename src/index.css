@@ -20,4 +20,16 @@ body{
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }

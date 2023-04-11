@@ -286,14 +286,22 @@
   }
 }
 
+@media screen and (max-width: 740px) {
+  .imageContainer {
+    width: 30rem;
+    top: -10%;
+  }
+  .headingContainer {
+    margin-top: 70vh;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .imageContainer {
     width: 25rem;
     top: -15%;
   }
-  .headingContainer {
-    margin-top: 70vh;
-  }
+  
   .homeContainer {
     gap: 10vh;
   }
