@@ -102,7 +102,7 @@ export default function NavBar() {
             <button onClick={() => scrollToElement("contact")}>Contact</button>
           </div>
           <div className={styles.contactButtonContainer}>
-            <button>Download CV</button>
+            <a href="public\Matias Tonelli CV Full-Stack.pdf" download>Download CV</a>
           </div>
         </div>
       )}

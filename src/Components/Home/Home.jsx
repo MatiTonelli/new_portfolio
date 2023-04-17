@@ -3,34 +3,17 @@ import styles from "./Home.module.css";
 import { useState, useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
 
-
 import fotoHome from "../../assets/MatiPort.png";
-import kinema from "../../assets/kinema.png";
-import findYourActivity from "../../assets/findYourActivity.png";
-import wcFixture from "../../assets/WCFixture.jpg";
-import mailen from "../../assets/mailen.png";
 
-import Contact from "../Contact/Contact";
-import Footer from "../Footer/Footer";
+import Contact from "../Contact/Contact.jsx";
+import Footer from "../Footer/Footer.jsx";
+import Portfolio from "../Portfolio/Portfolio.jsx";
 
-setTimeout(() => {
-  let proyectos = document.querySelectorAll("." + styles.eachProyectContainer);
-  proyectos.forEach((proy) => {
-    proy.addEventListener("mouseover", () => {
-      proy.classList.toggle(styles.proyectOnHover);
-      proy.firstChild.style.filter = "grayscale(0%)";
-    });
-    proy.addEventListener("mouseout", () => {
-      proy.classList.toggle(styles.proyectOnHover);
-      proy.firstChild.style.filter = "grayscale(100%)";
-    });
-  });
-}, 500);
+
 
 export default function Home() {
-  
   return (
-    <div className={styles.homeContainer} >
+    <div className={styles.homeContainer}>
       <div className={styles.headingContainer} id="home">
         {/* heading  */}
         <div className={styles.titles}>
@@ -71,60 +54,19 @@ export default function Home() {
         <br />
         <p>
           Hi! I'm Matias, I'm 24 years old and recently graduated from Henry's
-          Full-Stack Bootcamp and looking for job. Before I started with the bootcamp
-          I have been studying the career of Computer engineering in the University
-          of Tres de Febrero (UNTREF). I advanced and complete on the branch of
-          programming. I consider myself a person who is persistent, adaptative
-          and self-didactic, I love videogames and programming. I want to keep
-          learning more and more about this field, currently doing it. <br />{" "}
-          See yah'!
+          Full-Stack Bootcamp and looking for job. Before I started with the
+          bootcamp I have been studying the career of Computer engineering in
+          the University of Tres de Febrero (UNTREF). I advanced and complete on
+          the branch of programming. I consider myself a person who is
+          persistent, adaptative and self-didactic, I love videogames and
+          programming. I want to keep learning more and more about this field,
+          currently doing it. <br /> See you!
         </p>
       </div>
-      <br />
-      <div className={styles.proyectsBiggerContainer} id="portfolio">
-        <h2>
-          <u>
-            <i>My projects</i>
-          </u>
-        </h2>
-        <div className={styles.proyectsContainer}>
-          <div
-            className={[styles.eachProyectContainer, styles.project1].join(" ")}
-          >
-            <img src={kinema} alt="" />
-            <div>I</div>
-            <h5>Kinema Entertainment</h5>
-            <p>Movies and Series</p>
-          </div>
-          <div
-            className={[styles.eachProyectContainer, styles.project2].join(" ")}
-          >
-            <img src={wcFixture} alt="" />
-            <div>II</div>
-            <h5>WCFixture</h5>
-            <p>Footbal and Bets</p>
-          </div>
-          <div
-            className={[styles.eachProyectContainer, styles.project3].join(" ")}
-          >
-            <img src={findYourActivity} alt="" />
-            <div>III</div>
-            <h5>findYourActivity</h5>
-            <p>Countries and Tourism</p>
-          </div>
-          <div
-            className={[styles.eachProyectContainer, styles.project1].join(" ")}
-          >
-            <img src={mailen} alt="" />
-            <div>IV</div>
-            <h5>Mailen's invitation</h5>
-            <p>Digital invitation</p>
-          </div>
-        </div>
-       
-      </div>
-      <Contact/>
-      <Footer/>
+      
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }

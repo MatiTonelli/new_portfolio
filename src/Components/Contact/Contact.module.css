@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: row;
   padding: 5%;
-  background-color: #fbd86553;
-  border: 1px solid black;
+  background-color: #fbd8653e;
+/*   border: 1px solid black; */
   border-radius: 10px;
 }
 
@@ -76,7 +76,7 @@ p {
   width: 170px;
   outline: none;
   border: none;
-  box-shadow: 0px 2px 6px #4e3cc8;
+  box-shadow: 0px 2px 6px #000000;
   position: relative;
 }
 
@@ -182,11 +182,11 @@ hr {
   .contactForm {
     gap: 0;
   }
-  h3 {
+  .contactContainer h3 {
     font-size: 2em;
     margin-bottom: 2em;
   }
-  p {
+  .contactContainer p {
     margin: 2em 0 2em 0;
   }
   .contactContainer {
@@ -199,10 +199,10 @@ hr {
   .eachInput{
     width: 85%;
   }
-  h3{
+  .contactContainer h3{
     margin-bottom: 0;
   }
-  p {
+  .contactContainer p {
     font-size: 1em;
   }
 }

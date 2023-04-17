@@ -1,7 +1,39 @@
 .footerContainer{
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     padding: 0;
     margin: 0;
-    background: linear-gradient(0deg, rgba(248,195,4,1) 49%, rgba(248,195,4,1) 54%, rgba(248,195,4,0.8547794117647058) 62%, rgba(248,195,4,0.6418942577030813) 74%, rgba(248,195,4,0.4290091036414566) 82%, rgba(248,195,4,0.40379901960784315) 87%, rgba(248,195,4,0.24413515406162467) 94%, rgba(248,195,4,0.16850490196078427) 96%, rgba(248,195,4,0.07046568627450978) 98%, rgba(248,195,4,0) 100%);
+    background:  rgba(248,195,4,1) 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+.footerChicoContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    font-family: Red Hat Mono;
+    font-size: 1.5em;
+}
+
+.botonFooter{
+    border: 1px solid rgba(33, 33, 33, 0.738);
+    padding: 0 20px 0 20px;
+    border-radius: 7px;
+    font-weight: 400;
+}
+
+.botonFooter:hover{
+    background-color: rgba(78, 78, 78, 0.211);
+}
+
+.textoFooter{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(22, 22, 22, 0.826);
+    font-style: italic;
 }

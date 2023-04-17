@@ -25,7 +25,7 @@
 }
 
 
-.contactButtonContainer button {
+.contactButtonContainer a {
   border: 0;
   background-color: rgb(226, 226, 226);
   color: rgba(0, 0, 0, 0.72);
@@ -35,6 +35,8 @@
   font-family: Red Hat Mono;
   font-weight: 600;
 }
+
+
 
 @media screen and (max-width: 740px) {
   .navBarContainer {
