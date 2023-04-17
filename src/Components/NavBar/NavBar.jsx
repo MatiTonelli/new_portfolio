@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 import { useState, useRef, useEffect } from "react";
+import { Toaster, toast } from 'sonner'
 
 export default function NavBar() {
   const [isSmallerThan740, setIsSmallerThan740] = useState(false);
@@ -102,7 +103,8 @@ export default function NavBar() {
             <button onClick={() => scrollToElement("contact")}>Contact</button>
           </div>
           <div className={styles.contactButtonContainer}>
-            <a href="public\Matias Tonelli CV Full-Stack.pdf" download>Download CV</a>
+            <Toaster />
+            <a href="public\Matias Tonelli CV Full-Stack.pdf" download onClick={() => toast('The download should start soon...')}>Download CV</a>
           </div>
         </div>
       )}
