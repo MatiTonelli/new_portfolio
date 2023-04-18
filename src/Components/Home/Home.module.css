@@ -228,6 +228,16 @@
   .headingContainer {
     margin-top: 70vh;
   }
+  @media screen and (max-height: 770px) {
+    .headingContainer{
+      margin-top: 80vh;
+    }
+  }
+  @media screen and (max-height: 705px){
+    .headingContainer{
+      margin-top: 90vh;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {

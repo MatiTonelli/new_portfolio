@@ -61,6 +61,14 @@
     transform-origin: left;
   }
 
+  @media screen and (max-height: 770px){
+    .menuButton{
+      gap: 0.5rem;
+      width: 29px;
+    }
+    
+  }
+
   .linea1 {
     animation-name: animacion1;
     animation-duration: 0.5s;
