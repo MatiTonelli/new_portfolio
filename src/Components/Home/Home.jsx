@@ -9,8 +9,6 @@ import Contact from "../Contact/Contact.jsx";
 import Footer from "../Footer/Footer.jsx";
 import Portfolio from "../Portfolio/Portfolio.jsx";
 
-
-
 export default function Home() {
   return (
     <div className={styles.homeContainer}>
@@ -54,16 +52,16 @@ export default function Home() {
         <br />
         <p>
           Hi! I'm Matias, I'm 24 years old and recently graduated from Henry's
-          Full-Stack Bootcamp and looking for job. Before I started with the
+          Full-Stack Bootcamp and looking for a job. Before I started with the
           bootcamp I have been studying the career of Computer engineering in
           the University of Tres de Febrero (UNTREF). I advanced and complete on
-          the branch of programming. I consider myself a person who is
-          persistent, adaptative and self-didactic, I love videogames and
-          programming. I want to keep learning more and more about this field,
-          currently doing it. <br /> See you!
+          the branch of programming. I consider myself persistent, adaptative
+          and self-didactic, I love videogames and programming. I want to keep
+          learning more and more about this field, currently doing it. <br />{" "}
+          See you!
         </p>
       </div>
-      
+
       <Portfolio />
       <Contact />
       <Footer />
